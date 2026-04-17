@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "project-pilot",
+  "description": "Full-stack project architect + session memory manager for Claude Code.",
+  "owner": {
+    "name": "Aditya Tiwari",
+    "url": "https://github.com/Adityatiwari1"
+  },
+  "plugins": [
+    {
+      "name": "project-pilot",
+      "description": "Runs a thorough interview, recommends tech stack, team size, sub-agent routing, and generates CLAUDE.md + PROJECT_MEMORY.md.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}
