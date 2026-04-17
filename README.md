@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/project-pilot.png" alt="Project Pilot" width="180" />
 
-  # Project Pilot — Claude Code Plugin
+  # Project Pilot  Claude Code Plugin
 
   > Full-stack project architect · session memory manager · codebase navigator
 
@@ -10,13 +10,13 @@
 
 ---
 
-Project Pilot handles the work that happens *before* you write code and *between* every session — architecture decisions, CLAUDE.md generation, session memory, and a live codebase graph that makes file search fast and token-cheap.
+Project Pilot handles the work that happens *before* you write code and *between* every session  architecture decisions, CLAUDE.md generation, session memory, and a live codebase graph that makes file search fast and token-cheap.
 
 ---
 
 ## ✨ Commands
 
-### `/pilot-architect` — new projects
+### `/pilot-architect`  new projects
 Trigger: *"I want to build X"*, *"help me plan my app"*, *"what stack should I use"*
 
 - Runs a **15-question interview** in two rounds (vision → technical depth)
@@ -25,16 +25,16 @@ Trigger: *"I want to build X"*, *"help me plan my app"*, *"what stack should I u
 - Generates `PROJECT_MEMORY.md` for session continuity
 - **Auto-runs `/graph`** immediately after to map the new project
 
-### `/pilot-memory` — session restore + memory management
+### `/pilot-memory`  session restore + memory management
 Trigger: *"where were we"*, *"continue"*, *"new session"*, or `PROJECT_MEMORY.md` found
 
 - Reads `PROJECT_MEMORY.md` and delivers a **6-line context summary** instantly
 - Logs decisions, new dependencies, and schema changes mid-session
-- Patches only changed sections at session end — no full rewrites
+- Patches only changed sections at session end  no full rewrites
 - Updates `CODEBASE_GRAPH.md` immediately whenever a new file, route, model, or dependency is added
 - If no `PROJECT_MEMORY.md` exists: runs **5-question create flow** instead
 
-### `/pilot-init` — existing codebases
+### `/pilot-init`  existing codebases
 Trigger: `/pilot-init`, *"init my project"*, *"setup claude.md for existing project"*
 
 - Scans the codebase to auto-detect stack, framework, ORM, auth, infra, and test setup
@@ -42,8 +42,8 @@ Trigger: `/pilot-init`, *"init my project"*, *"setup claude.md for existing proj
 - Generates `CLAUDE.md` + `PROJECT_MEMORY.md` from real project state
 - **Auto-runs `/graph`** after to produce a full codebase map
 
-### `/graph` — codebase map
-Trigger: `/graph`, *"map codebase"*, *"graph my project"* — or **auto-runs after `/pilot-architect` and `/pilot-init`**
+### `/graph`  codebase map
+Trigger: `/graph`, *"map codebase"*, *"graph my project"*  or **auto-runs after `/pilot-architect` and `/pilot-init`**
 
 - Deep-scans the working directory (up to 4 levels, skips build/cache dirs)
 - Generates `CODEBASE_GRAPH.md` with:
@@ -54,29 +54,29 @@ Trigger: `/graph`, *"map codebase"*, *"graph my project"* — or **auto-runs aft
   - Key dependencies with versions
   - Environment variable reference
   - Navigation quick-reference ("where do I add X?")
-- **Claude reads this before touching any source file** — never globs directories when the graph exists
+- **Claude reads this before touching any source file**  never globs directories when the graph exists
 - Updates incrementally mid-session whenever files, routes, models, or dependencies change
 
-### `/project-pilot` — help
+### `/project-pilot`  help
 Lists all commands and which one to use for your situation.
 
 ---
 
 ## 📦 Installation
 
-### Step 1 — Add this marketplace to Claude Code
+### Step 1  Add this marketplace to Claude Code
 
 ```bash
 /plugin marketplace add Adityatiwari1/project-pilot
 ```
 
-### Step 2 — Install the plugin
+### Step 2  Install the plugin
 
 ```bash
 /plugin install project-pilot@project-pilot
 ```
 
-### Step 3 — Reload plugins
+### Step 3  Reload plugins
 
 ```bash
 /reload-plugins
@@ -138,11 +138,11 @@ project-pilot/
 
 Every `CLAUDE.md` this plugin generates includes 15 hardcoded rules. Key ones:
 
-- **Graph-first file search** — Claude reads `CODEBASE_GRAPH.md` before touching any source file
+- **Graph-first file search**  Claude reads `CODEBASE_GRAPH.md` before touching any source file
 - Diffs over full rewrites
 - Haiku for cheap ops (planning, routing, summarising)
-- Sub-agent context capping — agents get only the sections they need
-- Selective file reads — never load files irrelevant to the current task
+- Sub-agent context capping  agents get only the sections they need
+- Selective file reads  never load files irrelevant to the current task
 
 ---
 
