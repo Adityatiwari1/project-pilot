@@ -1,0 +1,13 @@
+{
+  "name": "project-pilot",
+  "description": "Full-stack project architect + session memory manager. Runs a thorough interview, recommends tech stack, team size, sub-agent routing, and generates CLAUDE.md + PROJECT_MEMORY.md for every project.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Aditya Tiwari",
+    "email": "aditiwari0070@gmail.com"
+  },
+  "homepage": "https://github.com/Adityatiwari1/project-pilot",
+  "repository": "https://github.com/Adityatiwari1/project-pilot",
+  "license": "MIT",
+  "keywords": ["architecture", "project-setup", "CLAUDE.md", "memory", "tech-stack", "planning"]
+}
