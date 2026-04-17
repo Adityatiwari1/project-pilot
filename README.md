@@ -34,7 +34,7 @@ Trigger: *"where were we"*, *"continue the project"*, *"new session"*, or `PROJE
 - Updates `CODEBASE_GRAPH.md` immediately whenever a new file, route, model, or dependency is added
 
 ### 🗂️ Init Mode — existing projects
-Trigger: `/init`, *"init my project"*, *"setup claude.md for existing project"*
+Trigger: `/pilot-init`, *"init my project"*, *"setup claude.md for existing project"*
 
 - Scans the codebase to auto-detect stack, framework, ORM, auth, infra, and test setup
 - Asks only **3 targeted questions** (what scanning can't answer)
@@ -93,7 +93,7 @@ Trigger: `/graph`, *"map codebase"*, *"graph my project"* — or **auto-runs aft
 |---|---|
 | Starting a new project | *"I want to build a SaaS for X"* |
 | Returning to existing work | *"Where were we on my project?"* |
-| Existing codebase, no setup | `/init` |
+| Existing codebase, no setup | `/pilot-init` |
 | Only need memory tracking | `/memory` |
 | Map an existing codebase | `/graph` |
 

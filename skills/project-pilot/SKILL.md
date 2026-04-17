@@ -339,7 +339,7 @@ Then run **ARCHITECT MODE** from the top.
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 > Trigger: user has an existing codebase (frontend, backend, or fullstack) and wants CLAUDE.md +
-> PROJECT_MEMORY.md generated without starting from scratch. Commands: `/init`, "init my project",
+> PROJECT_MEMORY.md generated without starting from scratch. Commands: `/pilot-init`, "pilot-init", "init my project",
 > "setup claude.md for existing project", "init existing project".
 
 ## Phase 1 — Codebase Scan
@@ -588,4 +588,4 @@ When working in this codebase:
 1. Confirm `CODEBASE_GRAPH.md` written
 2. Report: file count scanned, sections generated, estimated token savings vs. full-codebase read
 3. Tell the user: *"Reference CODEBASE_GRAPH.md at session start for fast navigation. Claude will use it to locate files without re-reading the whole codebase."*
-4. Suggest: *"Run `/init` to also generate CLAUDE.md and PROJECT_MEMORY.md if you haven't already."*
+4. Suggest: *"Run `/pilot-init` to also generate CLAUDE.md and PROJECT_MEMORY.md if you haven't already."*
