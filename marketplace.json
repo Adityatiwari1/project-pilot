@@ -4,15 +4,22 @@
     "name": "Aditya Tiwari",
     "email": "aditiwari0070@gmail.com"
   },
+  "metadata": {
+    "description": "Full-stack project architect + session memory manager for Claude Code",
+    "pluginRoot": "./"
+  },
   "plugins": [
     {
       "name": "project-pilot",
-      "source": {
-        "source": "github",
-        "repo": "Adityatiwari1/project-pilot"
-      },
+      "source": "./",
+      "description": "Runs a thorough interview, recommends tech stack, team size, sub-agent routing, and generates CLAUDE.md + PROJECT_MEMORY.md.",
       "version": "1.0.0",
-      "description": "Full-stack project architect + session memory manager. Runs a thorough interview, recommends tech stack, team size, sub-agent routing, and generates CLAUDE.md + PROJECT_MEMORY.md for every project.",
+      "author": {
+        "name": "Aditya Tiwari"
+      },
+      "homepage": "https://github.com/Adityatiwari1/project-pilot",
+      "repository": "https://github.com/Adityatiwari1/project-pilot",
+      "license": "MIT",
       "category": "productivity",
       "keywords": ["architecture", "project-setup", "CLAUDE.md", "memory", "tech-stack", "planning"]
     }
