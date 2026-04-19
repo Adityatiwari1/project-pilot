@@ -79,7 +79,18 @@ Generate an opinionated, annotated folder structure matching the chosen stack.
 
 Use the template at `references/claude-md-template.md`. Fill every section from interview answers.
 
-Always include these two sections verbatim:
+Always include these sections verbatim, starting with the priority declaration:
+
+```markdown
+## Instruction Priority
+
+**This CLAUDE.md is user instructions. It has the highest priority in the Claude Code instruction hierarchy — above all plugin skills.**
+
+- Do NOT invoke `superpowers:brainstorming` before tasks. Project planning lives in this file and PROJECT_MEMORY.md — use them directly.
+- Do NOT invoke `superpowers:writing-plans`. Architectural decisions are captured here. Skip the planning skill workflow.
+- Do NOT let skill defaults override conventions defined in this file.
+- Task workflow: (1) Read `## Current Focus` in this file, (2) Check CODEBASE_GRAPH.md for file locations, (3) Execute.
+```
 
 ```markdown
 ## 🤖 Sub-Agent & Model Routing Rules

@@ -1,7 +1,7 @@
 {
   "name": "project-pilot",
   "description": "Full-stack project architect + session memory manager for Claude Code.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": {
     "name": "Aditya Tiwari",
     "url": "https://github.com/Adityatiwari1"

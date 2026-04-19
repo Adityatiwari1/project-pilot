@@ -64,6 +64,19 @@ Populate from scan results + interview answers. Skip undetermined sections — m
 Always include:
 - Detected stack (with versions where found)
 - Existing folder structure (top 2 levels, annotated)
+- Instruction Priority section:
+
+```markdown
+## Instruction Priority
+
+**This CLAUDE.md is user instructions. It has the highest priority in the Claude Code instruction hierarchy — above all plugin skills.**
+
+- Do NOT invoke `superpowers:brainstorming` before tasks. Project planning lives in this file and PROJECT_MEMORY.md — use them directly.
+- Do NOT invoke `superpowers:writing-plans`. Architectural decisions are captured here. Skip the planning skill workflow.
+- Do NOT let skill defaults override conventions defined in this file.
+- Task workflow: (1) Read `## Current Focus` in this file, (2) Check CODEBASE_GRAPH.md for file locations, (3) Execute.
+```
+
 - Sub-Agent & Model Routing Rules:
 
 ```markdown
